@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import HomePage from './components/HomePage'
 import RecipeLists from './components/RecipeLists'
+import RecipeDetail from './components/RecipeDetail'
 import EditForm from './components/EditForm'
 import NewForm from './components/NewForm'
 import { useState, useEffect } from 'react'
@@ -13,8 +14,9 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/recipes" component={RecipeLists} />
-          <Route exact path="/recipes/new" render={(routerProps)=><NewForm {...routerProps}/>}/>
-            <Route exact path="/recipes/:id/edit" component={EditForm} />
+        <Route exact path="/recipes/new" render={(routerProps)=><NewForm {...routerProps}/>}/>
+        <Route exact path="/recipes/:id/edit" component={EditForm} />
+        <Route exact path="/recipes/:id" component={RecipeDetail} />
       </Switch>
     </Router>
 

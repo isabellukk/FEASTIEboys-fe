@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+
 
 const NewForm = (props) => {
 
@@ -48,6 +50,7 @@ const NewForm = (props) => {
   }
 
   return (
+    <div>
     <form onSubmit={handleSubmit}>
            <label htmlFor='name'>Name</label>
            <input name='name' id='name' value={input.name} onChange={handleChange} />
@@ -67,6 +70,9 @@ const NewForm = (props) => {
          <input type="submit" value="submit" />
 
        </form>
+
+       <button><Link to={`/recipes/`}>Go back</Link></button>
+       </div>
   )
 
 }
