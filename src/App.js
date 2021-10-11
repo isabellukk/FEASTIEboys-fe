@@ -5,12 +5,17 @@ import RecipeDetail from './components/RecipeDetail'
 import EditForm from './components/EditForm'
 import NewForm from './components/NewForm'
 import IngredientsForm from './components/IngredientsForm'
+import NavBar from './components/NavBar'
+import NavigationOptions from './components/NavigationOptions'
 import { useState, useEffect } from 'react'
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <div className="App">
+    <NavBar />
     <Router>
       <Switch>
         <Route exact path="/" component={HomePage} />
