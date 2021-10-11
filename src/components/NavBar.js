@@ -1,7 +1,7 @@
 import React from 'react'
 import NavigationOptions from './NavigationOptions'
 import { Navbar, NavDropdown, Nav, Container } from 'react-bootstrap'
-import whitefeast from '../images/whitefeast.png'
+import feastiewhite from '../images/feastiewhite.png'
 
 
 function NavBar() {
@@ -13,7 +13,7 @@ function NavBar() {
       <Navbar fixed="top" collapseOnSelect expand="lg left" bg="dark" variant="dark" className="navbar">
         <Container>
         <Navbar.Brand href="/">
-          <img src="https://cdn3.iconfinder.com/data/icons/food-drinks-and-agriculture-1/64/C_Fork_and_Knife-512.png" height="70px"/><img src={whitefeast} height="70px" />away</Navbar.Brand>
+          <img src="https://cdn3.iconfinder.com/data/icons/food-drinks-and-agriculture-1/64/C_Fork_and_Knife-512.png" height="70px"/><img src={feastiewhite} height="70px" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
 
@@ -21,8 +21,9 @@ function NavBar() {
           <Nav className="me-auto">
             <NavDropdown title="More" className="dropMore">
               <NavDropdown.Item href="/pantry">Pantry</NavDropdown.Item>
-              <NavDropdown.Item href="/recipes">Recipes</NavDropdown.Item>
               <NavDropdown.Item href="/inspiration">Inspiration Station</NavDropdown.Item>
+              <NavDropdown.Item href="/recipes">Recipes</NavDropdown.Item>
+
 
             </NavDropdown>
           </Nav>
