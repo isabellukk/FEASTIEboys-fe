@@ -7,6 +7,7 @@ import NewForm from './components/NewForm'
 import IngredientsForm from './components/IngredientsForm'
 import NavBar from './components/NavBar'
 import NavigationOptions from './components/NavigationOptions'
+import Pantry from './components/pantry/Pantry'
 import { useState, useEffect } from 'react'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
