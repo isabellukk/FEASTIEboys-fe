@@ -1,5 +1,4 @@
 import React from 'react'
-import NavigationOptions from './NavigationOptions'
 import { Navbar, NavDropdown, Nav, Container } from 'react-bootstrap'
 import feastiewhite from '../images/feastiewhite.png'
 
@@ -9,11 +8,10 @@ function NavBar() {
   return (
 
       <div>
-        <NavigationOptions />
       <Navbar fixed="top" collapseOnSelect expand="lg left" bg="dark" variant="dark" className="navbar">
         <Container>
         <Navbar.Brand href="/">
-          <img src="https://cdn3.iconfinder.com/data/icons/food-drinks-and-agriculture-1/64/C_Fork_and_Knife-512.png" height="70px"/><img src={feastiewhite} height="70px" /></Navbar.Brand>
+          <img src="https://cdn3.iconfinder.com/data/icons/food-drinks-and-agriculture-1/64/C_Fork_and_Knife-512.png" height="70px"/><img src={feastiewhite} height="100px" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
 

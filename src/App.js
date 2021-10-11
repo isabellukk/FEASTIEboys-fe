@@ -6,7 +6,6 @@ import EditForm from './components/EditForm'
 import NewForm from './components/NewForm'
 import IngredientsForm from './components/IngredientsForm'
 import NavBar from './components/NavBar'
-import NavigationOptions from './components/NavigationOptions'
 import Pantry from './components/pantry/Pantry'
 import { useState, useEffect } from 'react'
 import './App.css';
@@ -23,6 +22,8 @@ function App() {
         <Route exact path="/" component={HomePage} />
         <Route exact path="/recipes" component={RecipeLists} />
         <Route exact path="/recipes/new" render={(routerProps)=><NewForm {...routerProps}/>}/>
+        <Route exact path="/pantry" component={Pantry} />
+
       <Route exact path="/recipes/ingredients" render={(routerProps)=><IngredientsForm {...routerProps}/>}/>
 
         <Route exact path="/recipes/:id/edit" component={EditForm} />

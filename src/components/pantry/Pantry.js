@@ -1,23 +1,18 @@
 import React from 'react'
+import Input from './Input'
 import { useEffect } from 'react'
 
 
 function Pantry() {
-  useEffect(() => {
+    useEffect(() => {
+    }, [])
 
-  }, [])
-
-  return (
-
-    <div>
-      <h1>Whats in that pantry of yours?</h1>
-
-
-    </div>
-
-
-  )
-
+    return (
+        <div>
+            <h1>What's In Your Pantry?</h1>
+            <Input />
+        </div>
+    )
 }
 
 export default Pantry
