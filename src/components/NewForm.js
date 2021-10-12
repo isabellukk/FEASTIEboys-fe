@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom'
+import * as ReactBootstrap from 'react-bootstrap'
 import { Form, Button } from 'react-bootstrap'
+import styled from 'styled-components'
+
+const NewFormStyles = styled.body`
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 15%;
+`
 
 
 const NewForm = (props) => {
@@ -15,16 +24,11 @@ const NewForm = (props) => {
     name: "",
     description: "",
     ingredients: [],
-    // ingredientsNum: 1,
-    // numberOfFields: 1,
-    // currentFieldId: "",
     directions: "",
     img: ""
   })
 
 
-
-// Fetch (POST+CREATE)
   const addItem = async (data) => {
     try {
       const configs = {
@@ -51,32 +55,45 @@ const NewForm = (props) => {
   }
 
   return (
-    <div>
-    <div class="form-group">
-    <form onSubmit={handleSubmit}>
-           <label htmlFor='name'>Name</label>
-           <input name='name' id='name' value={input.name} onChange={handleChange} />
 
-           <label htmlFor='description'>Description</label>
-           <input name='description' id='description' value={input.description} onChange={handleChange} />
+    <div className="card">
+      <NewFormStyles>
+      <Form onSubmit={handleSubmit}>
+        <Form.Group className="mb-3" controlId="formBasicSpirit">
+          <Form.Label htmlFor="name">Name of Recipe: </Form.Label>
+          <Form.Control type="text" name='name' id='name' value={input.name} onChange={handleChange}/>
+        </Form.Group>
 
-           <label htmlFor='ingredients'>Ingredients</label>
-           <input name='ingredients' id='ingredients' value={input.ingredients} onChange={handleChange} />
+        <Form.Group className="mb-3" controlId="formBasicNotes">
+          <Form.Label>Description: </Form.Label>
+          <Form.Control type="text" as="textarea" name='description' id='description' value={input.description} onChange={handleChange} />
+        </Form.Group>
 
-           <label htmlFor='directions'>Directions</label>
-           <input name='directions' id='directions' value={input.directions} onChange={handleChange} />
+        <Form.Group className="mb-3" controlId="formBasicSpirit">
+          <Form.Label htmlFor="ingredients">List of Ingredients: </Form.Label>
+          <Form.Control type="text" name='ingredients' id='ingredients' value={input.ingredients} onChange={handleChange}/>
+        </Form.Group>
 
-           <label htmlFor='img'>Img Url</label>
-           <input name='img' id='img' value={input.img} onChange={handleChange} />
+        <Form.Group className="mb-3" controlId="formBasicNotes">
+          <Form.Label>Directions: </Form.Label>
+          <Form.Control type="text" as="textarea" name='directions' id='directions' value={input.directions} onChange={handleChange} />
+        </Form.Group>
 
-         <input type="submit" value="submit" />
+        <Form.Group className="mb-3" controlId="formBasicImg">
+          <Form.Label>Image</Form.Label>
+          <Form.Control type="text" name='img' value={input.img} onChange={handleChange} />
+        </Form.Group>
 
-       </form>
+        <div className="cancel-submit">
+          <Button onClick={redirect}>Back</Button>
+          <Button variant="success" type="submit">Submit</Button>
+        </div>
+    </Form>
+</NewFormStyles>
 
-       <button><Link to={`/recipes/`}>Go back</Link></button>
-       </div>
-       </div>
-  )
+    </div>
+
+)
 
 }
 

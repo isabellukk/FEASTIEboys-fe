@@ -1,14 +1,17 @@
 import React from 'react'
 import { Navbar, NavDropdown, Nav, Container } from 'react-bootstrap'
 import feastiewhite from '../images/feastiewhite.png'
+import styled from 'styled-components'
 
 
 function NavBar() {
 
+
   return (
 
       <div>
-      <Navbar fixed="top" collapseOnSelect expand="lg left" bg="dark" variant="dark" className="navbar">
+
+      <Navbar fixed="top" collapseOnSelect bg="dark" variant="dark" className="navbar">
         <Container>
         <Navbar.Brand href="/">
           <img src="https://cdn3.iconfinder.com/data/icons/food-drinks-and-agriculture-1/64/C_Fork_and_Knife-512.png" height="70px"/><img src={feastiewhite} height="100px" /></Navbar.Brand>
@@ -32,7 +35,9 @@ function NavBar() {
         </Navbar.Collapse>
         </Container>
       </Navbar>
+
       </div>
+
     )}
 
 

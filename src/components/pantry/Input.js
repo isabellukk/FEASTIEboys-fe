@@ -1,9 +1,16 @@
 import React from 'react'
 import { useState } from 'react'
 import PantryResults from './PantryResults'
+import styled from 'styled-components'
+
+const InputBody = styled.body`
+
+
+  background-image: url("https://images.pexels.com/photos/6692128/pexels-photo-6692128.jpeg");
+
+`
 
 function Input() {
-
     const [input, setInput] = useState("")
     const [entrees, setEntrees] = useState("")
 
@@ -19,8 +26,9 @@ function Input() {
 
 
     return (
-        <div>
-            <div>
+      <InputBody>
+        <div className="card-container">
+            <div className="card">
                 <form onSubmit={handleSubmit}>
                     <label>Input the ingredients you have! We'll take care of the rest :)</label><br />
                     <input value={input} onChange={handleChange} type='text' placeholder="What's in that pantry of yours?" />
@@ -31,6 +39,7 @@ function Input() {
             </div>
             {entrees && <PantryResults entrees={entrees} />}
         </div>
+        </InputBody>
     )
 }
 

@@ -14,7 +14,7 @@ function DataList(props) {
         const fetchEntrees = async () => {
             try {
                 setLoading(true)
-                const fetchData = await axios.get(`https://api.spoonacular.com/recipes/findByIngredients?apiKey=cb1c464d94f142c08b156c5beddade8b&ingredients=${queryStr}&number=10`)
+                const fetchData = await axios.get(`https://api.spoonacular.com/recipes/findByIngredients?apiKey=aea7d24262dd4071985ec67b85173fd2&ingredients=${queryStr}&number=1`)
                 if (fetchData.data.length !== 0) {
                     const dataArr = await fetchData.data
                     const dataIdArr = dataArr.map((item) => {
@@ -29,7 +29,7 @@ function DataList(props) {
                         try {
                             let containerArr = []
                             for await (const item of dataIdArr) {
-                                const recipeId = await axios.get(`https://api.spoonacular.com/recipes/${item}/information?apiKey=cb1c464d94f142c08b156c5beddade8b&includeNutrition=false`)
+                                const recipeId = await axios.get(`https://api.spoonacular.com/recipes/${item}/information?apiKey=aea7d24262dd4071985ec67b85173fd2&includeNutrition=false`)
                                 containerArr.push(recipeId.data)
                             }
                             await setDataId(containerArr)
@@ -56,7 +56,7 @@ function DataList(props) {
           {loading && <ReactBootstrap.Spinner animation="border" variant="warning" />}
             <div>
                 {dataId.map((item, index) => {
-                    if (dataId.length === 10) {
+                    if (dataId.length === 1) {
                         return (
                             <div href={item.sourceUrl} target="_blank" key={item.id}>
                                 <img src={item.image} alt="Recipe" />

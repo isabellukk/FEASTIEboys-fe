@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom'
+import * as ReactBootstrap from 'react-bootstrap'
 
 function RecipeDetail(props) {
     const currentId = props.match.params.id
