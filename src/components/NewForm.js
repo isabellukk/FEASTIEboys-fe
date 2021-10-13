@@ -3,14 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom'
 import * as ReactBootstrap from 'react-bootstrap'
 import { Form, Button } from 'react-bootstrap'
-import styled from 'styled-components'
 
-const NewFormStyles = styled.body`
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  padding: 15%;
-`
 
 
 const NewForm = (props) => {
@@ -57,7 +50,6 @@ const NewForm = (props) => {
   return (
 
     <div className="card">
-      <NewFormStyles>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicSpirit">
           <Form.Label htmlFor="name">Name of Recipe: </Form.Label>
@@ -89,7 +81,6 @@ const NewForm = (props) => {
           <Button variant="success" type="submit">Submit</Button>
         </div>
     </Form>
-</NewFormStyles>
 
     </div>
 

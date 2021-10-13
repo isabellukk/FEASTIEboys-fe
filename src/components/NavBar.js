@@ -1,7 +1,6 @@
 import React from 'react'
 import { Navbar, NavDropdown, Nav, Container } from 'react-bootstrap'
 import feastiewhite from '../images/feastiewhite.png'
-import styled from 'styled-components'
 
 
 function NavBar() {
@@ -11,10 +10,9 @@ function NavBar() {
 
       <div>
 
-      <Navbar fixed="top" collapseOnSelect bg="dark" variant="dark" className="navbar">
-        <Container>
+      <Navbar fixed="top" collapseOnSelect className="navbar">
         <Navbar.Brand href="/">
-          <img src="https://cdn3.iconfinder.com/data/icons/food-drinks-and-agriculture-1/64/C_Fork_and_Knife-512.png" height="70px"/><img src={feastiewhite} height="100px" /></Navbar.Brand>
+          <img src="https://cdn3.iconfinder.com/data/icons/food-drinks-and-agriculture-1/64/C_Fork_and_Knife-512.png" height="78px"/><img src={feastiewhite} height="108px" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
 
@@ -33,7 +31,6 @@ function NavBar() {
             <Nav.Link eventKey={2} href="/auth/logout">Log Out</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        </Container>
       </Navbar>
 
       </div>

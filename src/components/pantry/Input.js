@@ -1,14 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import PantryResults from './PantryResults'
-import styled from 'styled-components'
 
-const InputBody = styled.body`
-
-
-  background-image: url("https://images.pexels.com/photos/6692128/pexels-photo-6692128.jpeg");
-
-`
 
 function Input() {
     const [input, setInput] = useState("")
@@ -26,7 +19,6 @@ function Input() {
 
 
     return (
-      <InputBody>
         <div className="card-container">
             <div className="card">
                 <form onSubmit={handleSubmit}>
@@ -39,7 +31,6 @@ function Input() {
             </div>
             {entrees && <PantryResults entrees={entrees} />}
         </div>
-        </InputBody>
     )
 }
 
