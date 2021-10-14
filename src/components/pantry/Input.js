@@ -19,11 +19,11 @@ function Input() {
 
 
     return (
-        <div className="card-container">
-            <div className="card">
+        <div className="pantryForm">
+            <div>
                 <form onSubmit={handleSubmit}>
-                    <label>Input the ingredients you have! We'll take care of the rest :)</label><br />
-                    <input value={input} onChange={handleChange} type='text' placeholder="What's in that pantry of yours?" />
+                    <br />
+                    <input value={input} onChange={handleChange} type='text' placeholder="What's in your pantry?" />
                     <div>
                         <input type="submit" value="Submit" />
                     </div>

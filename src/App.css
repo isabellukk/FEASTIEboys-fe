@@ -2,8 +2,11 @@ img {
   padding: 2%;
 }
 
+h2 {
+  color: white;
+}
+
 .card{
-  padding: 30%;
   background-image: url("https://images.pexels.com/photos/6692128/pexels-photo-6692128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-position: bottom;
   background-size: cover;
@@ -11,33 +14,84 @@ img {
 }
 
 .homePageContents{
-  padding: 20%;
+  padding-bottom: 47%;
+  padding-top: 15%;
   background-image: url(./images/peaches.jpeg);
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  max-height: 1%;
+
+
+}
+
+.pantryContent{
+  background-image: url("https://images.pexels.com/photos/6692128/pexels-photo-6692128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  padding-top: 15%;
+  padding-bottom: 90%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.homePageStyle{
+  background-color: rgb(156,132,100,.8);
+  border: 13px solid rgb(210,180,140);
+  backdrop-filter: blur(2px);
+  max-width: 45%;
+  max-height: 50%;
+  padding: 1%;
+  margin-left: 5%;
+  color: white;
+  font-size: auto;
+  box-shadow: 61px 71px 71px 7px rgba(255, 255, 255, 0.3);
+
 
 }
 form {
-
- max-width: 20%;
- max-height: 20%;
  background-color: none;
 }
 .App {
   text-align: center;
   font-family: sans-serif;
-  height: 100%;
-  background-color: none;
+  height: 100vh;
+}
+.randomItems{
+  background-color: rgb(255,255,255,0.3);
+  width: 40%;
+  margin-left: 30%;
+  padding: 2%;
+  backdrop-filter: blur(14px);
 
 }
+.pant{
+  font-size: 140%;
+  color: black;
+  backdrop-filter: blur(14px);
+}
+
+.inputInstructions{
+  color: white;
+}
+.pantry{
+  background-color: white;
+  display: inline;
+}
+
+
 .navbar{
-  background-color: tan;
+  background-image: linear-gradient( 200.4deg,  rgb(210,180,140) 72.2%, rgb(156,132,100) 9.5% );
   padding: 20%;
   display: flex;
+  box-shadow: 18px 17px 71px 7px rgba(0, 0, 0, 0.6);
   max-height: 11%;
-  box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);
 
 }
+
+
+
 
 h6 {
   border: 3px solid rgb(143,164,117, 0.3);
@@ -46,27 +100,48 @@ h6 {
 
 
 .inspirationContainer {
-  padding-top: 10%;
-  padding-left: 7%;
+  padding-top: 8%;
+  padding-left: 16%;
   padding-right: 3%;
-  height: 50%;
+  padding-bottom: 1%;
+  margin-bottom: 10%;
   width: 50%;
+  min-height: 100%;
   background-color: rgb(255,255,255,0.8);
 
 }
+td{
+  padding: 2%;
+  display: flex;
+  flex-flow: wrap;
+  align-items:;
+
+}
+.meals {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: scroll;
+  border: 3px solid rgb(143,164,117, 0.3);
+
+}
+
+
 
 .instructions {
   background-color: rgb(255,255,255,0.8);
+  padding: 1%;
 }
 
-ul {
-  background-color: rgb(255,255,255,0.8);
-  padding-right: 12%;
-}
+
 
 .nav-link{
   color: white;
+  font-size: 20px;
+
 }
+
 
 .button .btn {
   background-color: tan;
@@ -74,7 +149,7 @@ ul {
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  margin-left: 30%;
+  margin-left: 40%;
   font-size: 14px;
   margin-top: 2%;
   margin-bottom: 2%;

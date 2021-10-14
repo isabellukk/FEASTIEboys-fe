@@ -8,12 +8,9 @@ const Content = styled.body`
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
-  padding: 25%;
+  max-height: 100%;
+  max-width: 100%;
 
-`
-
-const InputStyle = styled.div`
-  background-color: none;
 `
 
 function Pantry() {
@@ -23,17 +20,14 @@ function Pantry() {
     return (
 
 
-      <div >
+      <div className="pantryContent">
 
         <Content>
+          <div className="pant">
+            <h1 className="pant">What's In Your Pantry?</h1>
+            <h3 className="inputInstructions">Enter as many ingredients as you want! We'll take care of the rest :)</h3><Input />
 
-            <h1>What's In Your Pantry?</h1>
-            <InputStyle>
-            <Input />
-            </InputStyle>
-
-
-
+        </div>
 
       </Content>
 

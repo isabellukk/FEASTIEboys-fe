@@ -54,13 +54,13 @@ function DataList(props) {
     return (
         <div>
           {loading && <ReactBootstrap.Spinner animation="border" variant="warning" />}
-            <div>
+            <div className="randomItems">
                 {dataId.map((item, index) => {
                     if (dataId.length === 1) {
                         return (
                             <div href={item.sourceUrl} target="_blank" key={item.id}>
-                                <img src={item.image} alt="Recipe" />
-                                <h1>{item.title}</h1>
+                                <img src={item.image} width="500px" />
+                                <h3>{item.title}</h3>
                                 <a href={item.spoonacularSourceUrl} target='_blank' rel="noreferrer"><button>Click for Recipe</button></a>
                             </div>
                         )

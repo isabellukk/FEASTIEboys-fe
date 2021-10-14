@@ -4,15 +4,11 @@ import feastiewhite from '../images/feastiewhite.png'
 
 
 function NavBar() {
-
-
   return (
-
       <div>
-
       <Navbar fixed="top" collapseOnSelect className="navbar">
         <Navbar.Brand href="/">
-          <img src="https://cdn3.iconfinder.com/data/icons/food-drinks-and-agriculture-1/64/C_Fork_and_Knife-512.png" height="78px"/><img src={feastiewhite} height="108px" /></Navbar.Brand>
+          <img src="https://cdn3.iconfinder.com/data/icons/food-drinks-and-agriculture-1/64/C_Fork_and_Knife-512.png" height="98px"/><img src={feastiewhite} height="98px" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
 
