@@ -1,14 +1,24 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { useHistory } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
+import { getUserToken } from '../utils/authToken.js'
 
 function RecipeLists(props) {
 
   const [recipes, setRecipes] = useState([])
+  const { userId } = useParams()
 
   const getRecipes = async () => {
           try {
-              const recipes = await fetch('http://localhost:9000/recipes');
+            const configs = {
+              method: "GET",
+              body: JSON.stringify(),
+              headers: {
+                "Content-Type": "application/JSON",
+                "Authorization": `bearer ${getUserToken()}`
+              }
+            }
+              const recipes = await fetch(`http://localhost:9000/${userId}/recipes`, configs);
               const parsedRecipes = await recipes.json();
               setRecipes(parsedRecipes);
           } catch (error) {
@@ -31,12 +41,12 @@ function RecipeLists(props) {
 
       {recipes && recipes.map(item => (
         <div className='item' key={item._id}>
-          <Link to={`/recipes/${item._id}`}>{item.name}</Link>
+          <Link to={`/${userId}/recipes/${item._id}`}>{item.name}</Link>
           <img src={item.img} width="100px" />
         </div>
                ))}
 
-        <button><Link to={`/recipes/new`}>Add a Recipe</Link></button>
+        <button><Link to={`/${userId}/recipes/new`}>Add a Recipe</Link></button>
 
     </div>
 

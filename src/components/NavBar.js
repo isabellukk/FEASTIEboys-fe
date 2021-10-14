@@ -23,8 +23,8 @@ function NavBar() {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="/auth/login">Login</Nav.Link>
-            <Nav.Link eventKey={2} href="/auth/logout">Log Out</Nav.Link>
+            <Nav.Link href="/login">Login</Nav.Link>
+            <Nav.Link eventKey={2} href="/">Log Out</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom'
 import * as ReactBootstrap from 'react-bootstrap'
 import { Form, Button } from 'react-bootstrap'
-
+import { getUserToken } from '../utils/authToken.js'
 
 
 const NewForm = (props) => {
+  const { userId } = useParams()
 
   let history = useHistory();
 
   const redirect = () => {
-  history.push('/recipes')
+  history.push(`/${userId}/recipes`)
   }
   const [input, setInput] = useState({
     name: "",
@@ -28,12 +29,13 @@ const NewForm = (props) => {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
+          "Authorization": `bearer ${getUserToken}`
         },
       }
-      const createdItem = await fetch("http://localhost:9000/recipes", configs)
+      const createdItem = await fetch(`http://localhost:9000/${userId}/recipes`, configs)
       const parsedItem = await createdItem.json()
-      props.history.push('/recipes')
+      props.history.push(`/${userId}/recipes`)
     } catch (error) {
       console.log(error);
     }
@@ -44,6 +46,7 @@ const NewForm = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    setInput("")
     addItem(input)
   }
 
