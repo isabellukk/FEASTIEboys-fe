@@ -31,7 +31,7 @@ const NewForm = (props) => {
           "Content-Type": "application/json"
         },
       }
-      const createdItem = await fetch("http://localhost:9000/recipes", configs)
+      const createdItem = await fetch("https://feastieboys.herokuapp.com/recipes", configs)
       const parsedItem = await createdItem.json()
       props.history.push('/recipes')
     } catch (error) {

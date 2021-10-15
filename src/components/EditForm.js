@@ -22,7 +22,7 @@ function EditForm(props) {
     const getRecipeToEdit = async (id) => {
         try {
             const id = props.match.params.id;
-            const foundRecipe = await fetch("http://localhost:9000/recipes/" + id)
+            const foundRecipe = await fetch(`https://feastieboys.herokuapp.com/recipes/${id}/edit`)
             const parsedRecipe = await foundRecipe.json()
             setInput(parsedRecipe)
             setLoading(false)
@@ -45,7 +45,7 @@ function EditForm(props) {
             }
         }
 
-        const updateRecipe = await fetch("http://localhost:9000/recipes/" + id, configs)
+        const updateRecipe = await fetch("https://feastieboys.herokuapp.com/recipes" + id, configs)
         console.log(updateRecipe)
         const parsedUpdateRecipe = await updateRecipe.json();
         props.history.push('/recipes/')
@@ -69,7 +69,7 @@ function EditForm(props) {
 
     const deleteRecipe = async (id) => {
         try {
-            const deleteRecipe = await fetch('http://localhost:9000/recipes/' + id, {
+            const deleteRecipe = await fetch('https://feastieboys.herokuapp.com/recipes' + id, {
                 method: 'DELETE',
             })
             console.log(deleteRecipe);

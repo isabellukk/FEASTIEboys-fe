@@ -6,7 +6,7 @@ function RecipeDetail(props) {
     const currentId = props.match.params.id
     const [recipes, setRecipes] = useState({})
     const getRecipe = async (id) => {
-        const foundRecipe = await fetch('http://localhost:9000/recipes/' + id)
+        const foundRecipe = await fetch('https://feastieboys.herokuapp.com/recipes/' + id)
         const parsedRecipe = await foundRecipe.json()
         console.log(parsedRecipe)
         setRecipes(parsedRecipe)

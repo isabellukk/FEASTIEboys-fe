@@ -8,7 +8,7 @@ function RecipeLists(props) {
 
   const getRecipes = async () => {
           try {
-              const recipes = await fetch('http://localhost:9000/recipes');
+              const recipes = await fetch('https://feastieboys.herokuapp.com/recipes');
               const parsedRecipes = await recipes.json();
               setRecipes(parsedRecipes);
           } catch (error) {

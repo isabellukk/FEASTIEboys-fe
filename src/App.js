@@ -3,7 +3,6 @@ import RecipeLists from './components/RecipeLists'
 import RecipeDetail from './components/RecipeDetail'
 import EditForm from './components/EditForm'
 import NewForm from './components/NewForm'
-import IngredientsForm from './components/IngredientsForm'
 import NavBar from './components/NavBar'
 import Pantry from './components/pantry/Pantry'
 import InspirationStation from './components/InspirationStation'
@@ -28,7 +27,6 @@ function App() {
         <Route exact path="/inspiration" component={InspirationStation} />
 
 
-      // <Route exact path="/recipes/ingredients" render={(routerProps)=><IngredientsForm {...routerProps}/>}/>
 
         <Route exact path="/recipes/:id/edit" component={EditForm} />
         <Route exact path="/recipes/:id" component={RecipeDetail} />
