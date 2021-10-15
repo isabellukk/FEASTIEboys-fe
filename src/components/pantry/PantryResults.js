@@ -49,6 +49,7 @@ function DataList(props) {
             }
         }
         fetchEntrees()
+        console.log(fetchEntrees);
     }, [str])
 
     return (

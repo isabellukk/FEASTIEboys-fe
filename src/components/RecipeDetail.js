@@ -15,7 +15,7 @@ function RecipeDetail(props) {
           body: JSON.stringify(),
           headers: {
             "Content-Type": "application/JSON",
-            "Authorization": `bearer${getUserToken()}`
+            'Authorization': `bearer ${getUserToken()}`
           }
         }
         const foundRecipe = await fetch(`http://localhost:9000/${userId}/recipes/${id}`, configs)

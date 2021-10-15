@@ -14,6 +14,7 @@ const Content = styled.body`
 `
 
 function Pantry() {
+  console.log(Content);
     useEffect(() => {
     }, [])
 
@@ -22,6 +23,7 @@ function Pantry() {
 
       <div className="pantryContent">
 
+
         <Content>
           <div className="pant">
             <h1 className="pant">What's In Your Pantry?</h1>
@@ -29,8 +31,8 @@ function Pantry() {
 
         </div>
 
-      </Content>
 
+</Content>
       </div>
     )
 }

@@ -1,41 +1,61 @@
+import './App.css';
+import { useState } from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+import LoginForm from './components/Login'
+import RegisterForm from './components/RegisterForm'
+
 import HomePage from './components/HomePage'
 import RecipeLists from './components/RecipeLists'
 import RecipeDetail from './components/RecipeDetail'
 import EditForm from './components/EditForm'
-import NewForm from './components/NewForm'
-import IngredientsForm from './components/IngredientsForm'
-import NavBar from './components/NavBar'
+import NewRecipe from './components/NewRecipe'
 import Pantry from './components/pantry/Pantry'
 import InspirationStation from './components/InspirationStation'
-import Login from './components/Login'
-import Register from './components/Register'
 
-import { useState, useEffect } from 'react'
-import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios'
+import NavBar from './components/NavBar'
 
 
-function App() {
+
+const App = () => {
+
+  const [currentUser, setCurrentUser] = useState({})
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
+
+
   return (
     <div className="App">
-    <NavBar />
+
+
     <Router>
+      <Route exact path="/*" render={( renderProps ) =><NavBar {...renderProps} setIsAuthenticated={setIsAuthenticated} setCurrentUser={setCurrentUser}/>}/>
+
+
       <Switch>
-        <Route exact path="/:userId/home" component={HomePage} />
-        <Route exact path="/:userId/recipes" component={RecipeLists} />
-        <Route exact path="/:userId/recipes/new" render={(routerProps)=><NewForm {...routerProps}/>}/>
-        <Route exact path="/:userId/pantry" component={Pantry} />
-        <Route exact path="/:userId/inspiration" component={InspirationStation} />
-        <Route exact path="/" component={Login} />
-        <Route exact path="/register" component={Register} />
 
 
-      // <Route exact path="/recipes/ingredients" render={(routerProps)=><IngredientsForm {...routerProps}/>}/>
 
-        <Route exact path="/:userId/recipes/:id/edit" component={EditForm} />
-        <Route exact path="/:userId/recipes/:id" component={RecipeDetail} />
+        <Route exact path="/" render={( renderProps )=><LoginForm {...renderProps} setIsAuthenticated={setIsAuthenticated} setCurrentUser={setCurrentUser}/>}/>
+
+        <Route exact path="/register" render={( renderProps )=><RegisterForm {...renderProps} setIsAuthenticated={setIsAuthenticated} setCurrentUser={setCurrentUser}/>}/>
+
+        <Route exact path="/:userId/home" render={( renderProps )=><HomePage {...renderProps} />}/>
+
+
+      <Route exact path="/:userId/pantry" render={( renderProps )=><Pantry {...renderProps} />}/>
+
+      <Route exact path="/:userId/inspiration"render={( renderProps )=><InspirationStation {...renderProps} />}/>
+
+        <Route exact path="/:userId/recipes/" render={(routerProps) => <RecipeLists {...routerProps}/>}/>
+
+        <Route exact path="/:userId/recipes/new" render={(routerProps) => <NewRecipe {...routerProps}/>}/>
+
+        <Route exact path="/:userId/recipes/:id/edit" render={( routerProps ) => <EditForm {...routerProps} />}/>
+
+        <Route exact path="/:userId/recipes/:id" render={( routerProps ) => <RecipeDetail {...routerProps} />}/>
       </Switch>
     </Router>
 
