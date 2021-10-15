@@ -14,7 +14,7 @@ function DataList(props) {
         const fetchEntrees = async () => {
             try {
                 setLoading(true)
-                const fetchData = await axios.get(`https://api.spoonacular.com/recipes/findByIngredients?apiKey=aea7d24262dd4071985ec67b85173fd2&ingredients=${queryStr}&number=1`)
+                const fetchData = await axios.get(`https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.REACT_APP_API_KEY}&ingredients=${queryStr}&number=1`)
                 if (fetchData.data.length !== 0) {
                     const dataArr = await fetchData.data
                     const dataIdArr = dataArr.map((item) => {
@@ -29,7 +29,7 @@ function DataList(props) {
                         try {
                             let containerArr = []
                             for await (const item of dataIdArr) {
-                                const recipeId = await axios.get(`https://api.spoonacular.com/recipes/${item}/information?apiKey=aea7d24262dd4071985ec67b85173fd2&includeNutrition=false`)
+                                const recipeId = await axios.get(`https://api.spoonacular.com/recipes/${item}/information?apiKey=${process.env.REACT_APP_API_KEY}&includeNutrition=false`)
                                 containerArr.push(recipeId.data)
                             }
                             await setDataId(containerArr)
