@@ -38,7 +38,7 @@ const Meal = () => {
                 <h3><b>{strMeal}</b></h3>
 
 
-              <img src={strMealThumb} width="35%"/>
+              <img src={strMealThumb} width="45%"/>
 
 
 
