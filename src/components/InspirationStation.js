@@ -9,8 +9,10 @@ const Styles = styled.body`
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
-  max-height: 100%;
-  padding-bottom: 82%;
+  max-height: 100vh;
+  padding-bottom: 32%;
+  margin-bottom: 10%;
+  font-family: 'Open Sans Condensed', sans-serif;
 `
 
 
@@ -18,6 +20,8 @@ function InspirationStation() {
   return (
     <>
     <Styles>
+    <div className="inspirationPage">
+    </div>
       <div className="inspirationContainer">
 
         <h4>

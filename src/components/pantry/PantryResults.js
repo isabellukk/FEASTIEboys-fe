@@ -59,7 +59,7 @@ function DataList(props) {
                     if (dataId.length === 1) {
                         return (
                             <div href={item.sourceUrl} target="_blank" key={item.id}>
-                                <img src={item.image} width="500px" />
+                                <img src={item.image} width="250px" />
                                 <h3>{item.title}</h3>
                                 <a href={item.spoonacularSourceUrl} target='_blank' rel="noreferrer"><button>Click for Recipe</button></a>
                             </div>

@@ -30,7 +30,7 @@ const Meal = () => {
         {food.map((dish) => {
 
           const {idMeal,
-            strMeal, strInstructions, strMealThumb, strSource, strTags, strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5, strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10, strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5, strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10} = dish
+            strMeal, strInstructions, strMealThumb, strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5, strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10, strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5, strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10} = dish
 
           return (
             <div className="inspiration-scroll" key={idMeal}>
@@ -38,7 +38,7 @@ const Meal = () => {
                 <h3><b>{strMeal}</b></h3>
 
 
-              <img src={strMealThumb} width="45%"/>
+              <img src={strMealThumb} width="35%"/>
 
 
 
