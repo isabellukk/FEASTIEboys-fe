@@ -8,7 +8,7 @@ function NavBar() {
       <div>
       <Navbar fixed="top" collapseOnSelect className="navbar">
         <Navbar.Brand href="/">
-          <img src="https://cdn3.iconfinder.com/data/icons/food-drinks-and-agriculture-1/64/C_Fork_and_Knife-512.png" height="98px"/><img src={feastiewhite} height="98px" /></Navbar.Brand>
+          <img src="https://cdn3.iconfinder.com/data/icons/food-drinks-and-agriculture-1/64/C_Fork_and_Knife-512.png" height="79px"/><img src={feastiewhite} height="98px" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
 

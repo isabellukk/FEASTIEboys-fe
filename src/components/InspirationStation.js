@@ -10,7 +10,7 @@ const Styles = styled.body`
   background-repeat: no-repeat;
   background-size: contain;
   max-height: 100%;
-  padding-bottom: 70%;
+  padding-bottom: 82%;
 `
 
 

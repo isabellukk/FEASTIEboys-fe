@@ -25,7 +25,7 @@ function Pantry() {
         <Content>
           <div className="pant">
             <h1 className="pant">What's In Your Pantry?</h1>
-            <h3 className="inputInstructions">Enter as many ingredients as you want! We'll take care of the rest :)</h3><Input />
+            <h4 className="inputInstructions">Enter as many ingredients as you want! We'll take care of the rest :)</h4><Input />
 
         </div>
 
