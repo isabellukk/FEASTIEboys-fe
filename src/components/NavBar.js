@@ -17,8 +17,6 @@ function NavBar() {
             <Nav>
               <Nav.Link href="/">Home</Nav.Link>
               <h3> | </h3>
-              <Nav.Link href="/about">About</Nav.Link>
-              <h3> | </h3>
               <Nav className="navOptions">
               <Nav.Link href="/pantry">Pantry</Nav.Link>
               <h3> | </h3>

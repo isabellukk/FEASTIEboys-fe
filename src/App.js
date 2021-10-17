@@ -21,6 +21,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/" component={HomePage} />
+
         <Route exact path="/recipes" component={RecipeLists} />
         <Route exact path="/recipes/new" render={(routerProps)=><NewForm {...routerProps}/>}/>
         <Route exact path="/pantry" component={Pantry} />

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useHistory } from 'react-router-dom';
 import { Button } from 'react-bootstrap'
-
+import * as ReactBootstrap from "react-bootstrap";
 
 
 function RecipeLists() {
@@ -30,31 +30,32 @@ function RecipeLists() {
 
   <div className="recipePage">
     <div className="allRecipes">
-      <div className="recipeContainer">
+
+      <div className="recipeContainer ">
 
 
       {recipes && recipes.map(item => (
 
         <div className='item' key={item._id}>
-          <div className="itemCard">
+          <div className="itemCard mediaImg">
+            <img src={item.img} width="188px" height="188px" />
+            <br />
           <Link to={`/recipes/${item._id}`}>{item.name}</Link>
-          <img src={item.img} width="200px" />
+
         </div>
 
         </div>
       ))}
 
-
-
-
       </div>
 
-
     </div>
-    <a href={`/recipes/new`} className="listButton" role="button">Back</a>
-
+    <div className="listButton">
+      <a href={`/recipes/new`} class="btn btn-warning" role="button">Add a Recipe!</a>
+      </div>
 
   </div>
+
 
 
     </>

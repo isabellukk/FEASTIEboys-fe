@@ -62,9 +62,9 @@ const NewForm = (props) => {
           <Form.Control type="text" as="textarea" name='description' id='description' value={input.description} onChange={handleChange} />
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicSpirit">
+        <Form.Group className="mb-3" controlId="formBasicIngredients">
           <Form.Label htmlFor="ingredients">List of Ingredients: </Form.Label>
-          <Form.Control type="text" name='ingredients' id='ingredients' value={input.ingredients} onChange={handleChange}/>
+          <Form.Control type="text" as="textarea" name='ingredients' id='ingredients' value={input.ingredients} onChange={handleChange}/>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicNotes">

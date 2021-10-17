@@ -6,12 +6,16 @@ import { Form, Button } from 'react-bootstrap'
 
 function RecipeDetail(props) {
     const currentId = props.match.params.id
-    const [recipes, setRecipes] = useState({})
+    const [recipes, setRecipes ] = useState({})
+
     const getRecipe = async (id) => {
         const foundRecipe = await fetch('https://feastieboys.herokuapp.com/recipes/' + id)
         const parsedRecipe = await foundRecipe.json()
-        console.log(parsedRecipe)
+        console.log(foundRecipe)
         setRecipes(parsedRecipe)
+
+
+
     };
     useEffect(() => {
         getRecipe(currentId)
@@ -24,7 +28,7 @@ function RecipeDetail(props) {
         <div className="tableInfo">
         <h1>{recipes.name}</h1>
 
-          <img src={recipes.img} width="190px" />
+          <img src={recipes.img} width="300px" />
 
 
           <table class="table table-hover">
@@ -33,17 +37,17 @@ function RecipeDetail(props) {
 
               <tr>
                 <th scope="row">Description: </th>
-                <td>{recipes.description}</td>
+                <td align="left">{recipes.description}</td>
               </tr>
 
               <tr>
                 <th scope="row">Ingredients: </th>
-                <td>{recipes.ingredients}</td>
+                <td align="left">{recipes.ingredients}</td>
               </tr>
 
               <tr>
                 <th scope="row">Directions: </th>
-                <td>{recipes.directions}</td>
+                <td align="left">{recipes.directions}</td>
               </tr>
 
 
