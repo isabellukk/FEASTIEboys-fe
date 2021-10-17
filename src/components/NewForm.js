@@ -49,9 +49,10 @@ const NewForm = (props) => {
 
   return (
 
-    <div className="card">
+    <div className="listRecipe">
+      <div className="newForm">
       <Form onSubmit={handleSubmit}>
-        <Form.Group className="mb-3" controlId="formBasicSpirit">
+        <Form.Group className="mb-3" controlId="formBasicName">
           <Form.Label htmlFor="name">Name of Recipe: </Form.Label>
           <Form.Control type="text" name='name' id='name' value={input.name} onChange={handleChange}/>
         </Form.Group>
@@ -81,7 +82,7 @@ const NewForm = (props) => {
           <Button variant="success" type="submit">Submit</Button>
         </div>
     </Form>
-
+    </div>
     </div>
 
 )

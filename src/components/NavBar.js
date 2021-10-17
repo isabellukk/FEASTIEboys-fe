@@ -12,10 +12,9 @@ function NavBar() {
         <Navbar.Toggle />
 
 
-        <Navbar.Collapse id="responsive-navbar-nav collasible-nav-dropdown">
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav>
-              <h3> | </h3>
               <Nav.Link href="/">Home</Nav.Link>
               <h3> | </h3>
               <Nav.Link href="/about">About</Nav.Link>
@@ -26,16 +25,9 @@ function NavBar() {
               <Nav.Link href="/inspiration">Inspiration Station</Nav.Link>
               <h3> | </h3>
               <Nav.Link href="/recipes">Recipe Book</Nav.Link>
-              <h3> | </h3>
               </Nav>
-
-
-
-
             </Nav>
-
           </Nav>
-
         </Navbar.Collapse>
       </Navbar>
 

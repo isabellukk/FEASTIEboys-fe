@@ -22,7 +22,6 @@ const Meal = () => {
         <button onClick={() => fetchFood()} className="btn">
           Click for a random meal!
         </button>
-        <h6> </h6>
       </div>
       <br />
       <section className="meals">

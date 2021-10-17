@@ -2,6 +2,10 @@ a {
   color: black;
 }
 
+navbar-expand{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -9,19 +13,14 @@ body {
     sans-serif;
   -moz-osx-font-smoothing: grayscale;
 
-  /* background-image: url("https://www.foodbymaria.com/wp-content/uploads/2020/07/FoodByMaria_Feb2020_MJay.jpg");
-  background-attachment: fixed;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain; */
-
-  /* max-width: 100vw;
-  max-height: 100vh; */
-
 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.table>:not(:first-child) {
+    border-top: 2px solid white;
 }

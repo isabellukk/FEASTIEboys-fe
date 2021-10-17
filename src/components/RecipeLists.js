@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useHistory } from 'react-router-dom';
+import { Button } from 'react-bootstrap'
 
-function RecipeLists(props) {
+
+
+function RecipeLists() {
 
   const [recipes, setRecipes] = useState([])
+
+
 
   const getRecipes = async () => {
           try {
@@ -23,22 +28,31 @@ function RecipeLists(props) {
   return (
     <>
 
-  <div>
-
-
-    <div>
+  <div className="recipePage">
+    <div className="allRecipes">
+      <div className="recipeContainer">
 
 
       {recipes && recipes.map(item => (
-        <div className='item' key={item._id}>
-          <Link to={`/recipes/${item._id}`}>{item.name}</Link>
-          <img src={item.img} width="100px" />
-        </div>
-               ))}
 
-        <button><Link to={`/recipes/new`}>Add a Recipe</Link></button>
+        <div className='item' key={item._id}>
+          <div className="itemCard">
+          <Link to={`/recipes/${item._id}`}>{item.name}</Link>
+          <img src={item.img} width="200px" />
+        </div>
+
+        </div>
+      ))}
+
+
+
+
+      </div>
+
 
     </div>
+    <a href={`/recipes/new`} className="listButton" role="button">Back</a>
+
 
   </div>
 

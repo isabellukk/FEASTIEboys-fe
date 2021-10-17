@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { Form, Button } from 'react-bootstrap'
+import RecipeDetail from './RecipeDetail'
+import { useParams } from "react-router-dom"
+
+
 
 
 function EditForm(props) {
@@ -15,6 +20,10 @@ function EditForm(props) {
     const [input, setInput] = useState(initialState)
     const [loading, setLoading] = useState(true)
     const [show, setShow] = useState(false);
+    const { id } = useParams()
+
+
+
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -22,7 +31,7 @@ function EditForm(props) {
     const getRecipeToEdit = async (id) => {
         try {
             const id = props.match.params.id;
-            const foundRecipe = await fetch(`https://feastieboys.herokuapp.com/recipes/${id}/edit`)
+            const foundRecipe = await fetch("https://feastieboys.herokuapp.com/recipes/" + id)
             const parsedRecipe = await foundRecipe.json()
             setInput(parsedRecipe)
             setLoading(false)
@@ -45,7 +54,7 @@ function EditForm(props) {
             }
         }
 
-        const updateRecipe = await fetch("https://feastieboys.herokuapp.com/recipes" + id, configs)
+        const updateRecipe = await fetch("https://feastieboys.herokuapp.com/recipes/" + id, configs)
         console.log(updateRecipe)
         const parsedUpdateRecipe = await updateRecipe.json();
         props.history.push('/recipes/')
@@ -63,18 +72,20 @@ function EditForm(props) {
         setInput({ ...input, [e.target.name]: e.target.value })
     }
 
+
+
     useEffect(() => {
         getRecipeToEdit()
     }, [])
 
     const deleteRecipe = async (id) => {
         try {
-            const deleteRecipe = await fetch('https://feastieboys.herokuapp.com/recipes' + id, {
+            const deleteRecipe = await fetch('https://feastieboys.herokuapp.com/recipes/' + id, {
                 method: 'DELETE',
             })
             console.log(deleteRecipe);
             const parsedDeletedRecipe = await deleteRecipe.json();
-            props.history.push('/recipes')
+            props.history.push('/recipes/')
         } catch (error) {
             console.log(error)
         }
@@ -83,47 +94,51 @@ function EditForm(props) {
 
 
     return (
-        <div>
+      <div className="listRecipe">
+        <div className="editForm">
+          <h1>Editing {input.name} </h1>
             {loading ? (
                 <h3>Loading...</h3>
             ) : (
 
-              <form onSubmit={handleSubmit}>
-                  <div>
-                      <label htmlFor='name'>Name</label>
-                      <input name='name' id='name' value={input.name} onChange={handleChange} />
-                  </div>
-                  <div>
-                      <label htmlFor='description'>Description </label>
-                      <input name='description' id='description' value={input.description } onChange={handleChange} />
-                  </div>
-                  <div>
-                      <label htmlFor='ingredients'>Ingredients</label>
-                      <input name='ingredients' id='ingredients' value={input.ingredients} onChange={handleChange} />
-                  </div>
-                  <div>
-                      <label htmlFor='directions'>Directions</label>
-                      <input name='directions' id='directions' value={input.directions} onChange={handleChange} />
-                  </div>
 
+              <Form onSubmit={handleSubmit}>
+                <Form.Group className="mb-3" controlId="formBasicName">
+                  <Form.Label htmlFor="name">Name of Recipe: </Form.Label>
+                  <Form.Control type="text" name='name' id='name' value={input.name} onChange={handleChange}/>
+                </Form.Group>
 
-                  <div>
-                      <label htmlFor='img'>Img URL</label>
-                      <input name='img' id='img' value={input.img} onChange={handleChange} />
-                  </div>
+                <Form.Group className="mb-3" controlId="formBasicNotes">
+                  <Form.Label>Description: </Form.Label>
+                  <Form.Control type="text" as="textarea" name='description' id='description' value={input.description} onChange={handleChange} />
+                </Form.Group>
 
-                  <div>
+                <Form.Group className="mb-3" controlId="formBasicSpirit">
+                  <Form.Label htmlFor="ingredients">List of Ingredients: </Form.Label>
+                  <Form.Control type="text" name='ingredients' id='ingredients' value={input.ingredients} onChange={handleChange}/>
+                </Form.Group>
 
-                      <input type='submit' value='Confirm Changes' />
-                      <button onClick={() => deleteRecipe(input._id)}>Trash</button>
-                      < br />
-                      <button><Link to={`/recipes/`}>Go back</Link></button>
+                <Form.Group className="mb-3" controlId="formBasicNotes">
+                  <Form.Label>Directions: </Form.Label>
+                  <Form.Control type="text" as="textarea" name='directions' id='directions' value={input.directions} onChange={handleChange} />
+                </Form.Group>
 
-                  </div>
+                <Form.Group className="mb-3" controlId="formBasicImg">
+                  <Form.Label>Image</Form.Label>
+                  <Form.Control type="text" name='img' value={input.img} onChange={handleChange} />
+                </Form.Group>
 
-              </form>
+                <div className="cancel-submit">
+                  <a href={`/recipes/${id}`} class="btn btn-info" role="button">Back</a>
+                  <Button variant="success" type="submit">Submit</Button>
+                </div>
+
+            </Form>
+
             )}
         </div>
+      </div>
+
     )
 }
 

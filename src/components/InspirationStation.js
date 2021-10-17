@@ -8,8 +8,8 @@ const Styles = styled.body`
   background-attachment: fixed;
   background-position: right;
   background-repeat: no-repeat;
-  background-size: contain;
-  max-height: 100vh;
+  background-size: 150vh;
+  max-height: 120vh;
   padding-bottom: 32%;
   margin-bottom: 10%;
   font-family: 'Open Sans Condensed', sans-serif;
