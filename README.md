@@ -1,20 +1,17 @@
-# We are FEASTEboys.
-Equally passionate about food and the beastie boys.
-It is highly recommended to listen to the Beastie boys when navigating through the app, however, such bliss is not a requirememnt. 
+# We. Are. FEASTIEboys.
+Have you ever wondered what you could whip up in the kitchen based off of what is in your pantry? 
+FEASTIEboys has wondered too and came up with a solution so you do not have to!
 
-Have you ever wondered what you could whip up in the kitchen based off of whats in your pantry? 
-FEASTIEboys has wondered too and came up with a solution so you dont have to!
+We are passionate about food and the Beastie boys.
+It is highly recommended that you listen to the Beastie boys when navigating through the app, however, such bliss is not a requirememnt. 
+
+
 
 ## User Stories
+As a user, I would love to minimize food waste by using what I already have on hand. Sometimes I'm cooking the same recipes and end up ordering take out because I am bored of the same dishes. The app, FEASTIEboys, offers me suggesstions by generating a random dish that I can make. If I am feeling adventurous and would love to try a new dish, I could use the app to generate a completely random dish to try. Who knows? I'm one click away from discovering a new cuisine. 
 
-1. User should be able to enter any amount of ingredients into the database.
-2. User will then receive recipes that contain the ingredients they entered. 
-3. User can use the inspiration station for a randomly generated recipe.
-4. User will see the full recipe (name, image, ingredients, and instructions) followed by a link for more information if the user pleases. 
-5. User can enter the recipe book section to see a collection of their favorite recipes. Otherwise known as their "top hits".
-6. User can add the recipes for safe keeping and access.
-7. User can edit the recipes.
-8. User can delete the recipes.
+As a user who loves cooking, I aleady have a lot of recipes I already love. Sometimes I forget about them until a friend or family member requests for it. I can input my recipes in the recipe book so theres never any guessing for what I have made, what goes in it, and how its made. 
+
 
 
 
@@ -27,74 +24,27 @@ FEASTIEboys has wondered too and came up with a solution so you dont have to!
 | React     	| An open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. 	|
 | Node.js   	| An open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.                          	|
 | Bootstrap 	| Build responsive, mobile-first projects on the web with the world's most used front-end component library.                                                                       	|
+| Styled Components   	| A library for React and React Native that allows you to use component-level styles in your application that are written with a mixture of JavaScript and CSS using a technique called CSS-in-JS.                                                	|
+| Axios   	| A promise based HTTP client for the browser and Node. js. Axios makes it easy to send asynchronous HTTP requests to REST endpoints and perform CRUD operations. It can be used in plain JavaScript or with a library such as Vue or React.                                                	|
 
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
+Clone this front end repo
+``` 
+$ git@github.com:isabellukk/recipes-frontend.git
+$ npm install
+$ npm start
+```
+Clone the back end repo
+``` 
+$ git@github.com:isabellukk/recipes-backend.git
+$ npm install
+$ nodemon
+```
 
-## Available Scripts
+## Future Additions 
+1. User Authentication
+2. The user will be able to filter by cuisine and protein type.
+3. User will be able to filter through their own recipes with their pantry items.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
