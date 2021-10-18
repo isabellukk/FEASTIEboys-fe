@@ -1,6 +1,20 @@
-# WELCOME! we are FEASTIEboys.
+# We are FEASTEboys.
 Equally passionate about food and the beastie boys.
+It is highly recommended to listen to the Beastie boys when navigating through the app, however, such bliss is not a requirememnt. 
 
+Have you ever wondered what you could whip up in the kitchen based off of whats in your pantry? 
+FEASTIEboys has wondered too and came up with a solution so you dont have to!
+
+## User Stories
+
+1. User should be able to enter any amount of ingredients into the database.
+2. User will then receive recipes that contain the ingredients they entered. 
+3. User can use the inspiration station for a randomly generated recipe.
+4. User will see the full recipe (name, image, ingredients, and instructions) followed by a link for more information if the user pleases. 
+5. User can enter the recipe book section to see a collection of their favorite recipes. Otherwise known as their "top hits".
+6. User can add the recipes for safe keeping and access.
+7. User can edit the recipes.
+8. User can delete the recipes.
 
 
 
