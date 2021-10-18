@@ -63,7 +63,7 @@ $ nodemon
 ```
 
 ## Future Additions 
-1. User Authentication
+1. The App will include authentication so the user would have their own personal recipe book.
 2. The user will be able to filter by cuisine and protein type.
-3. User will be able to filter through their own recipes with their pantry items.
+3. The user will be able to filter through their own recipes with their pantry items.
 
