@@ -31,7 +31,8 @@ As a user who loves cooking, I aleady have a lot of recipes I already love. Some
 ![ezgif-7-74ebd785d523](https://user-images.githubusercontent.com/87626914/137678238-643e421d-967c-4364-a31f-da13dcf404c6.gif)
 
 
-
+## Live Demo
+https://feastieboys.surge.sh/
 
 
 ## Technologies
