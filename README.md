@@ -1,4 +1,20 @@
-# Getting Started with Create React App
+# WELCOME! we are FEASTIEboys.
+Equally passionate about food and the beastie boys.
+
+
+
+
+## Technologies
+
+| Tools     	| Description                                                                                                                                                                     	|
+|-----------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| MongoDb   	| A source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.           	|
+| Express   	| A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.                                                	|
+| React     	| An open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. 	|
+| Node.js   	| An open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.                          	|
+| Bootstrap 	| Build responsive, mobile-first projects on the web with the world's most used front-end component library.                                                                       	|
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
