@@ -14,17 +14,23 @@ As a user who loves cooking, I aleady have a lot of recipes I already love. Some
 
 ## Wireframe
 <img width="400" alt="Screen Shot 2021-10-17 at 10 28 42 PM" src="https://user-images.githubusercontent.com/87626914/137673976-78093fd0-2f78-4dc8-aa01-5a8dc97f62e9.png"><img width="400" alt="Screen Shot 2021-10-17 at 10 27 09 PM" src="https://user-images.githubusercontent.com/87626914/137673863-edce4d53-ab0e-412f-a80d-3813406346c4.png">
-
 <img width="400" alt="Screen Shot 2021-10-17 at 10 29 34 PM" src="https://user-images.githubusercontent.com/87626914/137674047-22a69603-07d5-4c80-982c-7cba3f773419.png"><img width="400" alt="Screen Shot 2021-10-17 at 10 30 00 PM" src="https://user-images.githubusercontent.com/87626914/137674079-a69b0cc3-4eac-4767-a146-e7ebaff60bfb.png">
 
 <img width="400" alt="Screen Shot 2021-10-17 at 10 30 27 PM" src="https://user-images.githubusercontent.com/87626914/137674129-109dae87-5b30-48bf-bacc-6bbd8fa00870.png">
 
 ## FEASTIEboys app
 
-<img width="800" alt="Screen Shot 2021-10-17 at 10 33 05 PM" src="https://user-images.githubusercontent.com/87626914/137674335-07f8ed5f-50f4-4e40-9dc5-2908f38b5bd3.png">
-<img width="800" alt="Screen Shot 2021-10-17 at 10 33 51 PM" src="https://user-images.githubusercontent.com/87626914/137674401-bf73e9a3-a8f7-444e-a71a-4e46d175c0e2.png">
 
-![ezgif-7-adb76c2266b6](https://user-images.githubusercontent.com/87626914/137675466-09160d58-b59f-4d37-a14d-603c31c36183.gif) ![ezgif-7-c14ed40d8934](https://user-images.githubusercontent.com/87626914/137676111-657b46ea-6791-4729-8817-0cc001dbc5fa.gif)
+
+<img width="900" alt="Screen Shot 2021-10-17 at 11 01 57 PM" src="https://user-images.githubusercontent.com/87626914/137677011-895f4fb1-b0c2-4cce-b47a-5011ff55759e.png">
+
+<img width="900" alt="Screen Shot 2021-10-17 at 11 04 57 PM" src="https://user-images.githubusercontent.com/87626914/137677308-600571eb-f872-4a09-b17f-de4d086ab5a2.png">
+
+![ezgif-7-21d546baae45](https://user-images.githubusercontent.com/87626914/137677671-ca869cca-bfcd-4aeb-a3b9-39988c15779b.gif)
+
+![ezgif-7-74ebd785d523](https://user-images.githubusercontent.com/87626914/137678238-643e421d-967c-4364-a31f-da13dcf404c6.gif)
+
+
 
 
 
