@@ -1,9 +1,8 @@
-import react from 'react'
+import React from 'react'
 import Meal from './Meal'
-import * as ReactBootstrap from 'react-bootstrap'
 import styled from 'styled-components'
 
-const Styles = styled.body`
+const Styles = styled.body `
   background-image: url("https://www.foodbymaria.com/wp-content/uploads/2020/07/FoodByMaria_Feb2020_MJay.jpg");
   background-attachment: fixed;
   background-position: right;
@@ -15,27 +14,22 @@ const Styles = styled.body`
   font-family: 'Open Sans Condensed', sans-serif;
 `
 
-
 function InspirationStation() {
-  return (
-    <>
-    <Styles>
-    <div className="inspirationPage">
+  return (<> < Styles > <div className="inspirationPage"></div>
+  <div className="inspirationContainer">
+
+    <h4>
+      <b>Welcome to the Inspiration Station!</b>
+      <br/>
+      Click the button to generate a random meal.
+    </h4>
+
+    <div className="scroll">
+      <Meal/>
     </div>
-      <div className="inspirationContainer">
 
-        <h4>
-          Welcome to the inspiration station, click the button to generate a random meal.
-        </h4>
-
-        <div className="scroll">
-        <Meal />
-        </div>
-
-      </div>
-</Styles>
-    </>
-  )
+  </div> < /Styles>
+    </ >)
 }
 
 export default InspirationStation

@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { Form, Button } from 'react-bootstrap'
-import RecipeDetail from './RecipeDetail'
 import { useParams } from "react-router-dom"
-
-
-
 
 function EditForm(props) {
     console.log(props)
@@ -19,14 +14,7 @@ function EditForm(props) {
 
     const [input, setInput] = useState(initialState)
     const [loading, setLoading] = useState(true)
-    const [show, setShow] = useState(false);
     const { id } = useParams()
-
-
-
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
 
     const getRecipeToEdit = async (id) => {
         try {
@@ -55,8 +43,6 @@ function EditForm(props) {
         }
 
         const updateRecipe = await fetch("https://feastieboys.herokuapp.com/recipes/" + id, configs)
-        console.log(updateRecipe)
-        const parsedUpdateRecipe = await updateRecipe.json();
         props.history.push('/recipes/')
     }
 
@@ -71,8 +57,6 @@ function EditForm(props) {
     const handleChange = (e) => {
         setInput({ ...input, [e.target.name]: e.target.value })
     }
-
-
 
     useEffect(() => {
         getRecipeToEdit()
@@ -91,8 +75,6 @@ function EditForm(props) {
         }
     }
 
-
-
     return (
       <div className="listRecipe">
         <div className="editForm">
@@ -100,7 +82,6 @@ function EditForm(props) {
             {loading ? (
                 <h3>Loading...</h3>
             ) : (
-
 
               <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicName">
@@ -129,8 +110,11 @@ function EditForm(props) {
                 </Form.Group>
 
                 <div className="cancel-submit">
-                  <a href={`/recipes/${id}`} class="btn btn-info" role="button">Back</a>
-                  <Button variant="success" type="submit">Submit</Button>
+                  <a href={`/recipes/${id}`} class="btn btn-info" role="button">Back</a> &nbsp; &nbsp;
+
+                  <Button variant="success" type="submit">Submit</Button> &nbsp; &nbsp;
+
+                    <Button variant="danger" onClick={() => deleteRecipe(input._id)}>Trash</Button>
                 </div>
 
             </Form>
