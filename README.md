@@ -50,15 +50,17 @@ https://feastieboys.surge.sh/
 
 
 ## Installation
+Back end https://github.com/isabellukk/FEASTIEboys-be
+
 Clone this front end repo
 ``` 
-$ git@github.com:isabellukk/recipes-frontend.git
+$ git@github.com:isabellukk/FEASTIEboys-fe.git
 $ npm install
 $ npm start
 ```
 Clone the back end repo
 ``` 
-$ git@github.com:isabellukk/recipes-backend.git
+$ git@github.com:isabellukk/FEASTIEboys-be.git
 $ npm install
 $ nodemon
 ```
