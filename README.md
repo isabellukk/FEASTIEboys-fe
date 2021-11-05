@@ -50,7 +50,7 @@ https://feastieboys.surge.sh/
 
 
 ## Installation
-Link to back end https://github.com/isabellukk/FEASTIEboys-be
+Link to back end repo https://github.com/isabellukk/FEASTIEboys-be
 
 Clone this front end repo
 ``` 
