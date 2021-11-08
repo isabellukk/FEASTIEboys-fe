@@ -208,6 +208,7 @@ body {
   display: flex;
   box-shadow: 18px 17px 71px 7px rgba(0, 0, 0, 0.6);
   max-height: 10vh;
+
 }
 
 
@@ -374,6 +375,9 @@ padding-bottom: 78vh;
 }
  */
 @media only screen and (min-width: 250px) and (max-width: 349px) {
+  .navbar{
+    padding: 1px;
+  }
 
   .listRecipe .editForm{
     display: flex;
@@ -460,6 +464,9 @@ padding-bottom: 78vh;
 
 
 @media only screen and (min-width: 350px) and (max-width: 500px) {
+  .navbar{
+    padding: 1px;
+  }
   .listRecipe .newForm{
     min-height: 88vh;
     min-width: 45vh;
@@ -555,6 +562,9 @@ padding-bottom: 78vh;
 }
 
 @media only screen and (min-width: 501px) and (max-width: 600px) {
+  .navbar{
+    padding: 1px;
+  }
   .listRecipe .newForm{
     min-height: 88vh;
     min-width: 45vh;
@@ -575,32 +585,6 @@ padding-bottom: 78vh;
     font-size: 14px;
   }
 }
-/* }
-@media only screen and (max-width: 550px) {
-  .navbar img {
-    max-width: 70px !important;
-    max-height: 70px !important;
-  }
-  .homePageContents{
-    display: flex;
-    flex-direction: column;
-  }
-  .pantryContent{
-    min-height: 100vh;
-  }
-  .pant h1{
-    overflow: hidden !important;
-  }
-  .navbar .nav-link{
-    font-size: 12px;
-  }
-} */
-
-/* @media only screen and (min-width: 800px) {
-.nav-link a{
-  font: 300px !important;
-}
-} */
 
 @media only screen and (min-width: 1021px) and (max-width: 1026px) and (min-height: 1364px) and (max-height: 1368px) {
   .listRecipe .newForm{
@@ -626,6 +610,9 @@ padding-bottom: 78vh;
 }
 
 @media only screen and (min-width: 360px) and (max-width: 380px) and (min-height: 800px) and (max-height: 813px) {
+  .navbar{
+    padding: 1px;
+  }
   .listRecipe .newForm{
     min-height: 70vh;
     min-width: 85vw;
