@@ -309,74 +309,9 @@ h1 {
   margin-bottom: 2%;
 }
 
-
-
-
-
-
-/* start of media */
-
-
-/*
-@media only screen and (min-width: 355px) and (max-width: 500px) {
-  .inspirationContainer{
-     display: grid;
-     margin-left: 7%;
-     margin-right: 7%;
-     margin-top: 20%;
-     min-width: 80%;
-     padding: 2%;
-
-  }
-.homePageContents{
-
-}
-.navbar{
-  display: inline-flex;
-  padding-left: 0px;
-}
-.navbar img {
-  min-width: 80px;
-  min-height: 80px;
-}
-.navbar a{
-  font-size: 14px !important;
-}
-
-.allRecipes{
-  display: flex;
-  margin-left: 16%;
-}
-.btn{
-  display: flex;
-
-}
-.listButton{
-  box-shadow: none;
-  margin-right: 2%;
-
-}
-
-.pant {
-    font-size: 140%;
-    color: black;
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
-    max-width: 70vw;
-    max-height: 90vh !important;
-    overflow-y: hidden !important;
-    overflow-x: hidden !important;
-
-}
-
-.pantryContent{
-padding-bottom: 78vh;
-}
-}
- */
 @media only screen and (min-width: 250px) and (max-width: 349px) {
   .navbar{
-    padding: 1px;
+    padding: 0.1px;
   }
 
   .listRecipe .editForm{
@@ -465,7 +400,9 @@ padding-bottom: 78vh;
 
 @media only screen and (min-width: 350px) and (max-width: 500px) {
   .navbar{
-    padding: 1px;
+    padding: 0.1px;
+    letter-spacing: -0.5px;
+
   }
   .listRecipe .newForm{
     min-height: 88vh;
