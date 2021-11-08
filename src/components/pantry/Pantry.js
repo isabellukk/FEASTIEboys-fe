@@ -18,11 +18,12 @@ function Pantry() {
 
     <Content>
       <div className="pant">
+        <div className="pantContainer">
         <h1 className="pant">What's In Your Pantry?</h1>
         <h4 className="inputInstructions">Enter as many ingredients as you want! We'll take care of the rest :)</h4><Input/>
 
       </div>
-
+</div>
     </Content>
 
   </div>)

@@ -76,7 +76,7 @@ function EditForm(props) {
     }
 
     return (
-      <div className="listRecipe">
+      <div className="listRecipe recipeEdit">
         <div className="editForm">
           <h1>Editing {input.name} </h1>
             {loading ? (
