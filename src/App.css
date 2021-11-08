@@ -322,6 +322,9 @@ h1 {
 }
 
 @media only screen and (min-width: 250px) and (max-width: 349px) {
+  .tableInfo img {
+    max-width: 225px;
+  }
   .navbar{
     padding: 0.1px;
   }
@@ -411,6 +414,9 @@ h1 {
 
 
 @media only screen and (min-width: 350px) and (max-width: 500px) {
+  .tableInfo img {
+    max-width: 225px;
+  }
   .navbar{
     padding: 0.1px;
     letter-spacing: -0.5px;
