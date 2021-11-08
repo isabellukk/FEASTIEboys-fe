@@ -10,7 +10,7 @@ function RecipeDetail(props) {
   };
 
   useEffect(() => {
-    getRecipe(currentId)
+    getRecipe()
   }, []);
 
   return (

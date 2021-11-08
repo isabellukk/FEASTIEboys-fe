@@ -25,6 +25,7 @@ const Meal = () => {
     {
     food.map((dish) => {
 
+
       const {
         idMeal,
         strMeal,
