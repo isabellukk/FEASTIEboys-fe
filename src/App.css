@@ -3,6 +3,9 @@
 .homePageStyle a {
   color: white;
 }
+navbar navbar navbar-expand navbar-light fixed-top {
+  padding: 1px;
+}
 
 .homePageStyle a:hover {
   color: black;
@@ -14,6 +17,12 @@
   color: white;
   font-size: 180px;
   padding: 4px;
+}
+.navbar{
+  max-height: 10vh !important;
+  padding-top: 1px;
+  padding-bottom: 1px;
+
 }
 .navbar a{
   font-size: 25px !important;
@@ -190,6 +199,9 @@ body {
   overflow-y: scroll !important;
   max-width: 70vw;
   max-height: 100vh !important;
+}
+.pant h1{
+  overflow-y: hidden !important;
 }
 
 .inputInstructions {
@@ -437,7 +449,7 @@ h1 {
       max-height: 60vh;
     }
     .recipePage{
-      min-height: 110vh;
+      min-height: 100vh;
     }
 
 
@@ -484,9 +496,18 @@ h1 {
   }
   .pantryContent{
   padding-bottom: 65vh;
+  min-height: 100vh;
+  max-height: 100vh;
+  }
+  .randomItems img{
+    max-width: 200px !important;
   }
   .pant{
   margin-bottom: 10%;
+  margin-top: 1px !important;
+  }
+  .pant h1{
+    overflow: hidden;
   }
   .navbar a{
     font-size: 14px !important;
@@ -548,13 +569,23 @@ h1 {
 
 @media only screen and (min-width: 360px) and (max-width: 380px) and (min-height: 800px) and (max-height: 813px) {
   .navbar{
-    padding: 1px;
+    max-height: 7vh !important;
+  }
+  .allRecipes{
+    max-width: 90vw !important;
+    min-height: 70vh;
+    margin-top: 14vh;
+  }
+  .navbar a{
+  display: inline !important;
+  }
+  .recipePage{
+    min-height: 100vh !important;
   }
   .listRecipe .newForm{
     min-height: 70vh;
     min-width: 85vw;
     margin-top: 13%;
-
   }
   .listRecipe .editForm{
     min-height: 70vh;
@@ -564,7 +595,7 @@ h1 {
 
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1025px) {
   .listRecipe .newForm{
     min-height: 88vh;
     min-width: 45vh;
@@ -593,12 +624,8 @@ h1 {
      padding: 2%;
 
   }
-  .navbar{
-    padding: 16%;
-  }
+
   .navbar-brand {
-      padding-top: 0.3125rem;
-      padding-bottom: 0.3125rem;
       font-size: 1.25rem;
       text-decoration: none;
       white-space: nowrap;
@@ -642,7 +669,21 @@ h1 {
   }
 }
 
+@media only screen and (min-width: 413px) and (max-width: 415px) and (min-height: 735px) and (max-height: 737px) {
+  .recipePage{
+    max-height: 90vh !important;
+    min-height: 90vh !important;
+  }
+  .recipeContainer{
+    max-height: 90vh !important;
+    min-height: 90vh !important;
+
+  }
+
+}
+
 @media only screen and (min-width: 742) and (max-width: 1000px) and (min-height: 1366px) and (max-height: 1500px) {
+
 
   .listRecipe .editForm{
     max-height: 50vh;
@@ -651,5 +692,97 @@ h1 {
     min-height: 80vh;
   }
 }
+
+
+
+@media only screen and (min-device-width: 600px)
+                   and (max-device-width: 837px)
+                   and (orientation: landscape) {
+
+  .pantryContent{
+    min-height: 140vh !important;
+  }
+  .pantContainer h1{
+    font-size: 25px;
+  }
+  .pantContainer h4{
+    font-size: 20px;
+  }
+  .pantContainer input{
+    font-size: 17px;
+  }
+  .esnVyi {
+    min-height: 140vh !important;
+  }
+  .listRecipe{
+    min-height: 90vh !important;
+
+  }
+  .listRecipe .newForm{
+    min-height: 50vh !important;
+    min-width: 77vw;
+    margin-top: 7%;
+      margin-bottom: 5%;
+    overflow-x: scroll;
+  }
+  .listRecipe .editForm{
+    min-height: 50vh !important;
+    min-width: 77vw;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    overflow-x: scroll;
+  }
+  .navbar{
+    max-height: 10vh !important;
+    min-height: 18vh !important;
+  }
+  .navbar a{
+    font-size: 18px !important;
+
+  }
+  .allRecipes{
+    margin-top: 10%;
+  }
+  .allRecipes img{
+    max-width: 110px;
+    max-height: 110px;
+  }
+  .allRecipes a{
+    font-size: 11px;
+  }
+
+  .listButton .btn{
+    padding: 0.25rem;
+  }
+  .homePageContents{
+    max-height: 130vh !important;
+  }
+  .homePageStyle{
+    max-width: 80vw;
+    max-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+  }
+  .homePageStyle h1{
+  font-size: 23px;
+  display: flex;
+  text-align: center;
+
+  }
+  .homePageStyle h4{
+  font-size: 19px;
+  text-align: left;
+  padding: 3px;
+  max-width: 80%;
+  }
+  .mediaHome{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 
 }

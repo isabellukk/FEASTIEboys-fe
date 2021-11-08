@@ -19,7 +19,7 @@ function DataList(props) {
           const dataIdArr = dataArr.map((item) => {
             return item.id
           })
-          
+
           const fetchDataId = async () => {
             try {
               let containerArr = []
@@ -28,6 +28,7 @@ function DataList(props) {
                 containerArr.push(recipeId.data)
               }
               await setDataId(containerArr)
+              setLoading(false)
 
             } catch (error) {
               setDataId(['Nothing came up :/ '])
