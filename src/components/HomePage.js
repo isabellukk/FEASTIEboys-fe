@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 
 function HomePage() {
-  return (<div className="homePageContents">
+  return (<div className="homePageContents col">
     <div className="homePageStyle">
       <div className="mediaHome">
       <h1 className="homeLink">
@@ -29,7 +29,7 @@ function HomePage() {
           No idea what you want to eat? We got you covered by generating a random meal!</h4>
       </p>
       </div>
-      <div className="mediaHome">
+      <div className="mediaHome homeRecipe">
 
       <h1 claassName="homeLink">
         <b>

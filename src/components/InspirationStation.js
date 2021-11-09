@@ -8,27 +8,34 @@ const Styles = styled.body `
   background-attachment: fixed;
   background-position: right;
   background-repeat: no-repeat;
-  background-size: 150vh;
+  background-size: 100vh;
 
   font-family: 'Open Sans Condensed', sans-serif;
 `
 
 function InspirationStation() {
-  return (<> < Styles > <div className="inspirationPage"></div>
+  return (
+    <>
+  <div className="overallInspire">
+    <div className="overallInspireCard">
+
+  <div className="inspirationPage"></div>
   <div className="inspirationContainer">
     <div className="scootDown">
     <h4>
-      <b>Welcome to the Inspiration Station!</b>
-      <br/>
-      <i>Click the button to generate a random meal</i>
-    </h4>
+      <b>Welcome to the Inspiration Station!</b></h4>
+      <h5>
+      <i>Click the button to generate a random meal</i></h5>
+
     </div>
 
     <div className="scroll">
       <Meal/>
     </div>
 
-  </div> < /Styles>
+  </div>
+</div>
+</div>
     </ >)
 }
 
