@@ -739,11 +739,11 @@ h1 {
     overflow-x: scroll;
   }
   .navbar{
-    max-height: 10vh !important;
-    min-height: 18vh !important;
+    max-height: 18vh !important;
+    min-height: 17vh !important;
   }
   .navbar a{
-    font-size: 18px !important;
+    font-size: 12px !important;
 
   }
   .allRecipes{
