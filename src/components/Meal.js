@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { Button } from 'react-bootstrap'
 
 const url = 'https://www.themealdb.com/api/json/v1/1/random.php'
 
@@ -15,9 +16,14 @@ const Meal = () => {
     fetchFood()
   }, [])
 
-  return (<> < div className = "button" > <button onClick={() => fetchFood()} className="btn">
-    Click for a random meal!
+  return (
+    <>
+    <div className="landscapeButton">
+    <div className="button">
+      <button onClick={() => fetchFood()} className="btn">
+    Click me!
   </button>
+</div>
 </div>
 <br/>
 <section className="meals">

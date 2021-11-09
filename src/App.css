@@ -247,7 +247,7 @@ h6 {
   margin-bottom: 5%;
   max-width: 50% !important;
   min-width: 60% !important;
-  min-height: 100vh;
+  max-height: 110vh;
   background-color: rgb(255, 255, 255, 0.8);
 }
 
@@ -313,9 +313,9 @@ h1 {
   background-color: tan;
   width: auto;
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  margin-left: 40%;
+  /* display: flex;
+  justify-content: space-around; */
+  /* margin-left: 40%; */
   font-size: 14px;
   margin-top: 2%;
   margin-bottom: 2%;
@@ -358,7 +358,7 @@ h1 {
   min-height: 50px;
   }
   .btn{
-    display: flex;
+    /* display: flex; */
     padding: 1px;
 
   }
@@ -376,11 +376,12 @@ h1 {
   .inspirationContainer{
       display: grid;
       align-items: center;
-      min-width: 79vw !important;
+      min-width: 85vw !important;
   }
-  .inspirationContainer h4 {
+  .scootDown {
     margin-top: 20%;
   }
+
   .navbar img {
       max-width: 62px !important;
       min-width: 30px !important;
@@ -400,16 +401,11 @@ h1 {
   flex-direction: column;
   padding-bottom: 30%;
 }
-  .inspirationContainer .btn {
-    display: flex;
-    justify-content: center;
-    margin-left: 28%;
 
-
-  }
   .meals{
     min-width: 70vw !important;
   }
+
 }
 
 
@@ -442,7 +438,6 @@ h1 {
     min-height: 50px;
     }
     .btn{
-      display: flex;
       padding: 1px;
 
     }
@@ -484,17 +479,11 @@ h1 {
      margin-left: 7%;
      margin-right: 7%;
      min-width: 82vw !important;
+     min-height: 40vh !important;
      padding: 2%;
   }
-  .inspirationContainer h4 {
+  .inspirationContainer .scootDown {
     margin-top: 15%;
-  }
-  .inspirationContainer .btn {
-    display: flex;
-    justify-content: center;
-    margin-left: 28%;
-
-
   }
 
   .navbar img {
@@ -678,6 +667,15 @@ h1 {
 /* iphone 6/7/8/plus */
 @media only screen and (min-width: 413px) and (max-width: 415px) and (min-height: 735px) and (max-height: 737px) {
 
+
+
+.meals .scroll{
+  max-height: 80vh;
+}
+
+.inspirationPage{
+  max-height: 80vh;
+}
   .tableInfo{
   margin-top: 10vh;
   max-width: 90vw !important;
@@ -801,6 +799,16 @@ h1 {
   .inspirationPage{
     max-height: 150vh !important;
   }
+
+  .landscapeButton .btn{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 3px;
+    padding-left: 3px;
+
+
+
+  }
   .esnVyi{
     max-height: 100vh !important;
   }
@@ -864,9 +872,7 @@ h1 {
   .listButton .btn{
     padding: 0.25rem;
   }
-  .homePageContents{
-    max-height: 130vh !important;
-  }
+
   .homePageStyle{
     max-width: 80vw;
     max-height: 60vh;
@@ -874,8 +880,9 @@ h1 {
     flex-direction: row;
     justify-content: center;
 
-
   }
+
+
   .homePageStyle h1{
   font-size: 23px;
   display: flex;
