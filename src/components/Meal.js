@@ -33,6 +33,7 @@ const Meal = () => {
 
 
       const {
+        strSource,
         idMeal,
         strMeal,
         strInstructions,
@@ -65,7 +66,7 @@ const Meal = () => {
             <b>{strMeal}</b>
           </h3>
 
-          <img src={strMealThumb} width="35%" alt=""/>
+          <a href={strSource}><img src={strMealThumb} width="35%" alt=""/></a>
 
           <h6></h6>
 

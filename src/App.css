@@ -399,7 +399,7 @@ td {
 }
 
 .instructions {
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255, 0.3);
   padding: 1%;
 }
 
@@ -462,6 +462,7 @@ h3 {
 }
 /* iphone 5 */
 @media only screen and (min-width: 250px) and (max-width: 349px) {
+
   td{
     padding: 1%;
   }
@@ -614,6 +615,9 @@ h3 {
     justify-content: center;
     display: inline-table;
   }
+  .meals{
+    max-height: 50vh;
+  }
   .td{
     padding: 1%;
   }
@@ -764,6 +768,9 @@ h3 {
     justify-content: center;
     display: inline-table;
   }
+  .meals{
+    max-height: 57vh;
+  }
   .drinks {
     padding-left: 10%;
     padding-right: 10%;
@@ -824,6 +831,7 @@ h3 {
 
 /* ipad */
 @media only screen and (min-width: 766px) and (max-width: 779px) and (min-height: 1022px) and (max-height: 1028px) {
+
 
   .overallInspireCard{
     margin-top: 20%;
@@ -1071,6 +1079,9 @@ td{
   td {
     padding: 1%;
   }
+  .meals{
+    max-height: 59vh;
+  }
   .drinkScroll h1{
     padding-top: 2%;
     padding-bottom: 2%;
@@ -1126,11 +1137,6 @@ td{
 
   }
 
-  .navbar-brand {
-      font-size: 1.25rem;
-      text-decoration: none;
-      white-space: nowrap;
-  }
 
 
     .navbar h3 {
@@ -1161,11 +1167,22 @@ td{
   .navbar{
     max-height: 10px !important;
   }
+  a.nav-link{
+    padding-left: 2%;
+  }
 
 }
 
 }
-/* ipad */
+
+@media only screen and (min-width: 498px) and (max-width: 599px) {
+}
+@media only screen and (min-width: 1000px) and (max-width: 1524px) {
+
+  .meals{
+    max-height: 57vh;
+  }
+}
 @media only screen and (min-width: 1000px) and (max-width: 1524px) and (min-height: 1366px) and (max-height: 1500px) {
 
   .inspirationContainer {
@@ -1296,6 +1313,14 @@ td{
   .pantryContent{
     min-height: 140vh !important;
   }
+
+  .navbar img{
+    max-width: 73px !important;
+
+  }
+  .navbar {
+    min-height: 15vh;
+  }
   a.navbar-brand{
     margin: 0 !important;
   }
@@ -1399,8 +1424,10 @@ td{
     margin: 0 !important;
   }
   a.nav-link{
-    padding: 0.1px !important;
+    padding: 5px !important;
+    font-size: 20px !important;
   }
+
 
   .landscapeButton .btn{
     padding-top: 2px;
@@ -1455,8 +1482,8 @@ td{
     display: none;
   }
   .navbar a{
-    font-size: 13px !important;
-
+    /* font-size: 13px !important; */
+    padding-left: 2%;
   }
   .allRecipes{
     margin-top: 10%;

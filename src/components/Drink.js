@@ -33,6 +33,7 @@ const Drink = () => {
 
 
       const {
+        strSource,
         idDrink,
         strDrink,
         strInstructions,
@@ -66,7 +67,7 @@ const Drink = () => {
         <div className="drinkScroll">
           <div className="box">
 
-          <img src={strDrinkThumb} width="60%" alt=""/>
+          <a href={strSource}><img src={strDrinkThumb} width="60%" alt=""/></a>
           </div>
           <div className="drinkInstructions">
           <h1><b>{strDrink}</b></h1>
@@ -102,7 +103,7 @@ const Drink = () => {
               <b>{strMeasure6}</b>
               &nbsp; {strIngredient6}
             </td>
-            
+
           </td>
 
 
