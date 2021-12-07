@@ -7,6 +7,8 @@ function DataList(props) {
   const str = props.entrees
   const [dataId, setDataId] = useState([])
   const [loading, setLoading] = useState(false)
+  // const YOUR_APP_ID = "98AE43C9";
+  // const YOUR_APP_KEY = "5dadbe216d63560310fe00f37bd98dec"
 
   useEffect(() => {
     let queryStr = str.trim().replace(/,/gi, '').split(' ').join(',+')

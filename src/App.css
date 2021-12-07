@@ -1,5 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
+.drinkPageStyle {
+  background-image: url("https://img.freepik.com/free-photo/summer-refreshing-cocktail-cold-sweet-drink-modern-hard-light-dark-shadow-putty-background-top-view_164638-12802.jpg?size=626&ext=jpg") !important;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.drinkScroll img{
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.drinkScroll h1{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4%;
+
+}
+
+/* .drinkMargin h1{
+  color: #3b5a64;
+} */
+
+.drinkContainer {
+  display: flex !important;
+  flex-direction: column;
+
+  margin-right: 90% !important;
+  padding-left: 16vw;
+  padding-right: 3%;
+  padding-bottom: 1%;
+  margin-bottom: 5%;
+  max-width: 90% !important;
+  min-width: 60% !important;
+  min-height: 110vh;
+
+}
+
+.buttonDrink {
+  background-color: tan;
+  width: auto;
+  border-radius: 10px;
+  font-size: 18px;
+  border-color: none !important;
+  margin-top: 1%;
+
+}
+.drinkMargin{
+  margin-top: 9%;
+}
+.drinkContents{
+  background-color: rgba(255,255,255,0.83);
+  min-height: 80vh;
+}
+.drinkMainContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.drinkInfo, td{
+  display: flex;
+}
+
+.buttonDrink{
+  padding: none !important;
+}
+.drinkScroll, td{
+  display: flex;
+}
+.drinkHeader{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.drinkInfo{
+  display: flex;
+  flex-direction: column;
+}
+.drinkInstructions{
+  padding-right: 10%;
+}
+
+.drinkInfo h4{
+  border-bottom: 1px solid #3b5a64;
+  border-top: 1px solid #3b5a64;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+
+.drinks{
+  padding-right: 10%;
+}
+
+.scrollDrink{
+  display: flex;
+  flex-direction: column;
+
+}
+.box{
+  padding: 1px !important;
+}
+.drinksM {
+  display: flex;
+  max-width: 90vw;
+  max-height: 60vh;
+  overflow-y: scroll;
+  justify-content: center;
+}
 
 .homePageStyle a {
   color: white;
@@ -48,6 +160,7 @@ navbar navbar navbar-expand navbar-light fixed-top {
   display: flex;
   justify-content: center;
 }
+
 
 .recipePage {
   background-image: url("https://www.varaistores.com/UploadImages/7ffa7e7f-3ddb-4d72-b450-9a82dacaf956_blog.jpg");
