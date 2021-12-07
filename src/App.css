@@ -610,6 +610,25 @@ h3 {
   .homePageStyle{
     box-shadow: none;
   }
+  .drinkScroll, td {
+    display: inline;
+  }
+  .drinkInstructions{
+    padding: 0;
+  }
+  .drinkScroll img {
+    border: none;
+    padding: 2px;
+  }
+  .drinkContents{
+    background-color: rgba(255,255,255,0.63);
+    min-height: 80vh;
+    margin-top: 10vh;
+  }
+  .scrollDrink{
+    display: flex;
+  }
+
   a.nav-link{
     padding: 5px !important;
   }
