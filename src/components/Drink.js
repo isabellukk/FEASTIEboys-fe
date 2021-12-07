@@ -80,10 +80,12 @@ const Drink = () => {
               <b>{strMeasure1}</b>
               &nbsp; {strIngredient1}
             </td>
+
             <td>
               <b>{strMeasure2}</b>
               &nbsp; {strIngredient2}
             </td>
+
             <td>
               <b>{strMeasure3}</b>
               &nbsp; {strIngredient3}
@@ -100,22 +102,7 @@ const Drink = () => {
               <b>{strMeasure6}</b>
               &nbsp; {strIngredient6}
             </td>
-            <td>
-              <b>{strMeasure7}</b>
-              &nbsp; {strIngredient7}
-            </td>
-            <td>
-              <b>{strMeasure8}</b>
-              &nbsp; {strIngredient8}
-            </td>
-            <td>
-              <b>{strMeasure9}</b>
-              &nbsp; {strIngredient9}
-            </td>
-            <td>
-              <b>{strMeasure10}</b>
-              &nbsp; {strIngredient10}
-            </td>
+            
           </td>
 
 

@@ -370,7 +370,7 @@ h6 {
   display: flex !important;
   flex-direction: column;
 
-  /* margin-top: 6% !important; */
+  margin-top: 4% !important;
   margin-right: 90% !important;
   padding-left: 16vw;
   padding-right: 3%;
@@ -1068,7 +1068,13 @@ td{
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1025px) {
-
+  td {
+    padding: 1%;
+  }
+  .drinkScroll h1{
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
   .drinkScroll, td {
     display: inline;
   }
