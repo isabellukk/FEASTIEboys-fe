@@ -51,7 +51,7 @@
 
 }
 .drinkMargin{
-  margin-top: 9%;
+  margin-top: 11%;
 }
 .drinkContents{
   background-color: rgba(255,255,255,0.83);
@@ -424,9 +424,9 @@ h3 {
 }
 
 
-h1 {
+/* h1 {
   font-size: 20px;
-}
+} */
 
 .listButton {
   margin-top: 90vh;
