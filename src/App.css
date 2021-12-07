@@ -116,9 +116,9 @@
 .homePageStyle a {
   color: white;
 }
-navbar navbar navbar-expand navbar-light fixed-top {
+/* navbar navbar navbar-expand navbar-light fixed-top {
   padding: 1px;
-}
+} */
 
 .navbar h3{
   display: flex;
@@ -419,6 +419,7 @@ h3 {
 .nav-link :hover {
   text-decoration: underline;
 }
+
 .nav-link {
   font-size: 30% !important;
 }
@@ -465,6 +466,11 @@ h3 {
     /* margin-bottom: 5% !important; */
     min-height: 100vh !important;
     max-height: 110vh !important;
+
+  }
+
+  a.navbar-brand{
+    margin: 0 !important;
   }
 
   .inspirationContainer{
@@ -604,6 +610,10 @@ h3 {
   .homePageStyle{
     box-shadow: none;
   }
+
+  a.navbar-brand{
+    margin: 0 !important;
+  }
   .tableInfo img {
     max-width: 225px;
   }
@@ -712,6 +722,9 @@ h3 {
   .navbar{
     padding: 1px;
   }
+  a.navbar-brand{
+    margin: 0 !important;
+  }
   .listRecipe .newForm{
     min-height: 88vh;
     min-width: 45vh;
@@ -740,6 +753,9 @@ h3 {
     margin-top: 20%;
     align-items: center;
 
+  }
+  a.navbar-brand{
+    margin: 0 !important;
   }
   .inspirationContainer{
     max-height: 75vh;
@@ -801,6 +817,9 @@ h3 {
   .overallInspireCard{
     margin-top: 20%;
   }
+  a.navbar-brand{
+    margin: 0 !important;
+  }
   .inspirationContainer{
     max-height: 85vh;
     min-height: 70vh;
@@ -848,6 +867,9 @@ h3 {
     outline: 10px solid white;
     outline-offset: 10px;
 
+  }
+  a.navbar-brand{
+    margin: 0 !important;
   }
   .inspirationContainer .scootDown {
     padding-top: 2% !important;
@@ -1058,6 +1080,9 @@ h3 {
     display: flex;
     overflow: hidden;
   }
+  a.navbar-brand{
+    margin: 0 !important;
+  }
 
 .meals{
   padding-left: 4%;
@@ -1078,6 +1103,9 @@ h3 {
 
   .pantryContent{
     min-height: 140vh !important;
+  }
+  a.navbar-brand{
+    margin: 0 !important;
   }
   .pantContainer h1{
     font-size: 25px;
@@ -1171,6 +1199,9 @@ h3 {
 
   .inspirationPage{
     max-height: 150vh !important;
+  }
+  a.navbar-brand{
+    margin: 0 !important;
   }
 
   .landscapeButton .btn{
