@@ -262,8 +262,8 @@ h2 {
   background-size: cover;
   background-attachment: fixed;
   background-position: left;
-  max-height: 110vh;
-  min-height: 100vh;
+  max-height: 120vh;
+  min-height: 110vh;
   margin-bottom: 1px;
 }
 .homePageContents {
@@ -360,7 +360,7 @@ h6 {
 }
 .inspirationContainer .scootDown{
   padding-bottom: 1px !important;
-  padding-top: 19%;
+  padding-top: 10%;
 }
 .scroll h4{
   padding-bottom: 1px !important;
