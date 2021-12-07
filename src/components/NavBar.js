@@ -15,22 +15,13 @@ function NavBar() {
         <Nav className="me-auto">
           <Nav>
             <Nav.Link href="/"><strong>Home</strong></Nav.Link>
-            <h3>
-              |
-            </h3>
           <Nav>
             <Nav.Link href="/pantry"><strong>Pantry</strong></Nav.Link>
-            <h3>
-              |
-            </h3>
+
             <Nav.Link href="/inspiration"><strong>Inspiration Station</strong></Nav.Link>
-            <h3>
-              |
-            </h3>
+
             <Nav.Link href="/recipes"><strong>Recipe Book</strong></Nav.Link>
-              <h3>
-              |
-            </h3>
+
             <Nav.Link href="/cocktails"><strong>Cocktails</strong></Nav.Link>
           </Nav>
           </Nav>
